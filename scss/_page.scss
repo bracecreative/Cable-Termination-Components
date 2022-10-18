@@ -1,0 +1,144 @@
+.deals__banner {
+	background-position: center;
+	background-size: cover;
+
+	@media(min-width: $xlargeScreen) {
+		height: 220px;
+	}
+
+	.background__overlay {
+		display: flex;
+		align-items: center;
+		height: 100%;
+		width: 100%;
+		background-color: rgba($blue, 0.6);
+		padding: 20px;
+
+		@media(min-width: $xlargeScreen) {
+			padding: 0px;
+		}
+
+		.text__wrapper {
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+
+			@media(min-width: $xlargeScreen) {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			.text__area {
+				color: $white;
+				text-transform: uppercase;
+				margin-bottom: 20px;
+
+				@media(min-width: $xlargeScreen) {
+					margin-bottom: 0px;
+				}
+
+				h2 {
+					font-size: 50px;
+				}
+
+				p {
+					font-size: 30px;
+				}
+			}
+		}
+	}
+
+	&.home__deals__banner {
+		.background__overlay {
+			background-color: rgba($lightGrey, 0.2);
+
+			.text__wrapper {
+
+				.text__area {
+					color: $blue;
+				}
+			}
+		}
+	}
+}
+
+
+.cta__bar {
+	background-color: $grey;
+	color: $white;
+
+	.cta__bar__inner {
+		padding: 20px 0px;
+		text-transform: uppercase;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.title {
+			margin-bottom: 20px;
+
+			@media(min-width: $largeScreen) {
+				margin-bottom: 0px;
+			}
+		}
+
+		@media(min-width: $largeScreen) {
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
+}
+
+.woocommerce-page {
+	.text__content {
+		padding-top: 50px;
+		padding-bottom: 50px;
+
+		.woocommerce-info {
+			padding-bottom: 20px;
+		}
+	}
+}
+
+
+.default__page {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	h1 {
+		font-size: 40px;
+		margin-bottom: 15px;
+	}
+
+	h1, h2, h3, h4 {
+		color: $blue;
+	}
+
+	ul {
+		margin-left: 16px;
+	}
+
+	p {
+		margin-bottom: 15px;
+	}
+}
+
+
+.woocommerce-page, .page-template-page-about-us, .page-template-page-contact-us {
+	.icon__row, .deals__banner {
+		display: none;
+	}
+
+	.icon__row {
+		@media(min-width: $mediumScreen) {
+			display: flex;
+		}
+	}
+
+	.deals__banner {
+		@media(min-width: $mediumScreen) {
+			display: block;
+		}
+	}
+}

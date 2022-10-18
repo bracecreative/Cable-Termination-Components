@@ -1,0 +1,141 @@
+.woocommerce-cart {
+	.form__wrapper__custom {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 50px;
+		padding-bottom: 100px;
+		color: $medGrey;
+
+		@media (min-width: $xxxlargeScreen) {
+			width: 80%;
+		}
+
+		.form__wrapper__table {
+			overflow-x: scroll;	
+
+			@media (min-width: $largeScreen) {
+				overflow: auto;
+			}
+		}
+
+		.shop_table {
+			width: 100%;
+			box-shadow: 1px 5px 5px 0px rgba(0,0,0,0.37);
+			-webkit-box-shadow: 1px 5px 5px 0px rgba(0,0,0,0.37);
+			-moz-box-shadow: 1px 5px 5px 0px rgba(0,0,0,0.37);
+			margin-bottom: 30px;
+
+			.shop__table__header {
+				background-color: $blue;
+				color: $white;
+				font-size: 25px;
+
+				.table__heading {
+					padding: 20px;
+					min-width: 250px;
+
+					@media (min-width: $largeScreen) {
+						width: 25%;
+						min-width: auto;
+					}
+				}
+			}
+
+			.table__cell {
+				text-align: center;
+				border: 1px solid rgba($medGrey, 0.2);
+				padding: 20px;
+				width: 250px;
+
+				@media (min-width: $largeScreen) {
+					width: auto;
+				}
+
+				a {
+					color: $medGrey;
+				}
+			}
+
+			.product-quantity {
+
+				&.table__cell {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+
+					.remove {
+						padding-left: 10px;
+						img {
+							max-width: 15px;
+						}
+					}
+				}
+
+				.quantity {
+					label {
+						display: none;
+					}
+
+					input {
+						border: 2px solid $grey;
+						padding: 10px;
+						max-width: 100px;
+					}
+				}
+			}
+
+			.coupons__update__cart {
+				display: none;
+			}
+		}
+
+		.cart-collaterals {
+
+			@media (min-width: $xlargeScreen) {
+				max-width: 50%;
+				margin-left: auto;
+			}
+
+			.cart_totals  {
+				h2 {
+					background-color: $grey;
+					color: $white;
+					padding: 20px;
+					text-transform: capitalize;
+					font-size: 25px;
+				}
+
+				.wc-proceed-to-checkout {
+					display: flex;
+					justify-content: center;
+
+					@media (min-width: $smallScreen) {
+						justify-content: flex-end;
+					}
+
+					.button {
+						background-color: $green;
+						color: $white;
+					}
+				}
+			}
+
+			.shop_table {
+				td {
+					text-align: center;
+					border: 1px solid rgba($medGrey, 0.2);
+					padding: 20px;
+				}
+			}
+
+			.woocommerce-shipping-methods {
+				list-style: none;
+
+				input {
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+}

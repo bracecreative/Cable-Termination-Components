@@ -1,0 +1,57 @@
+.about__us__wrapper {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background-image: url('../../img/bolt-texture.svg');
+	
+	.about__us__inner {
+		@media(min-width: $xlargeScreen) {
+			display: flex;
+			align-items: center;
+		}
+	}
+
+	.image__wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 30px;
+
+		@media(min-width: $xlargeScreen) {
+			width: 50%;
+			margin-right: 30px;
+			margin-bottom: 0px;
+		}
+
+		img {
+			max-width: 100%;
+		}
+	}
+
+	.text__wrapper {
+
+		@media(min-width: $xlargeScreen) {
+			width: 50%;
+		}
+
+		h1 {
+			font-size: 35px;
+			color: $blue;
+			text-transform: uppercase;
+			border-bottom: 1px solid $blue;
+			padding-bottom: 5px;
+			margin-bottom: 20px;
+			max-width: 70%;
+			font-weight: 400;
+		}
+
+		.text__area {
+			@media(min-width: $xxlargeScreen) {
+				max-width: 70%;
+			}
+
+			p {
+				margin-bottom: 15px;
+			}
+		}
+	}
+}

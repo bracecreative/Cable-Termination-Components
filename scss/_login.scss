@@ -1,0 +1,89 @@
+.ctcuk__customer__login__custom {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	color: $medGrey;
+
+	@media(min-width: $xlargeScreen) {
+		display: flex;
+		justify-content: space-between;
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+
+	@media(min-width: $xlargeHDScreen) {
+		width: 60%;
+	}
+
+	a {
+		color: $medGrey;
+	}
+
+	.title {
+		text-transform: uppercase;
+		font-weight: 400;
+		color: $blue;
+		font-size: 25px;
+	}
+
+	.sub__title {
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 25px;
+		color: $grey;
+		margin-bottom: 20px;
+	}
+
+	.woocommerce-form-row {
+		margin-bottom: 20px;
+
+		label {
+			display: block;
+		}
+
+		input {
+			border: 1.5px solid $blue;
+			padding: 10px;
+			width: 100%;
+		}
+	}
+
+	.lost_password {
+		margin-bottom: 20px;
+	}
+
+	.required {
+		color: $red;
+	}
+
+	.form-row {
+		label {
+			display: block;
+		}
+	}
+
+	.button {
+		margin-top: 20px;
+	}
+
+	.right__column {
+		background-color: $lightGrey;
+		padding: 40px;
+
+		@media(min-width: $xlargeScreen) {
+			width: calc(50% - 10px);
+		}
+	}
+
+	.left__column {
+		background-color: $lightGrey;
+		padding: 40px;
+		margin-bottom: 25px;
+
+		@media(min-width: $xlargeScreen) {
+			width: calc(50% - 10px);
+			margin-bottom: 0px;
+		}
+	}
+}

@@ -1,0 +1,255 @@
+.product__range__section {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background-image: url('../../img/bolt-texture.svg');
+
+	.box__container {
+		width: 95%;
+		margin-right: auto;
+		margin-left: auto;
+
+		@media(min-width: $xlargeScreen) {
+			display: flex;
+			justify-content: space-between;
+			width: 70%;
+			margin-right: auto;
+			margin-left: auto;
+		}
+	}
+
+	.large__product__box {
+		margin-bottom: 50px;
+
+		@media(min-width: $xlargeScreen) {
+			width: calc(50% - 10px);
+			margin-bottom: 0px;
+		}
+		.upper {
+			background-color: $lightGrey;
+
+			@media(min-width: $xlargeScreen) {
+				height: 200px;
+			}
+
+			img {
+				max-width: 40%;
+				margin-right: auto;
+				margin-left: auto;
+				display: block;
+
+				@media(min-width: $xlargeScreen) {
+					max-width: 90%;
+				}
+			}
+		}
+
+		.text__wrapper {
+			background-color: $blue;
+			color: $white;
+			padding: 20px 30px;
+			min-height: calc(100% - 200px);
+			display: flex;
+			flex-direction: column;
+
+			.text__inner {
+				margin-top: auto;
+				.title {
+					margin-bottom: 20px;
+				}
+
+				.text__list {
+					margin-bottom: 40px;
+					ul {
+						margin-left: 15px;
+						column-count: 2;
+						column-gap: 30px;
+						li {
+							margin-bottom: 15px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.double__boxes {
+
+		@media(min-width: $xlargeScreen) {
+			width: calc(50% - 10px);
+		}
+
+		.small__product__box {
+			background-color: $lightGrey;
+			margin-bottom: 20px;
+
+			.upper {
+				background-color: $lightGrey;
+				height: 120px;
+				img {
+					max-width: 100%;
+					margin-right: auto;
+					margin-left: auto;
+					display: block;
+					// padding-top: 20px;
+				}
+			}
+
+			.text__wrapper {
+				background-color: $blue;
+				color: $white;
+				padding: 20px;
+				display: flex;
+				flex-direction: column;
+				min-height: 280px;
+
+				.text__inner {
+					margin-top: auto;
+					text-align: center;
+
+					.title {
+						margin-bottom: 20px;
+					}
+
+					.text__area {
+						margin-bottom: 40px;
+					}
+				}
+			}
+
+			&:nth-child(2) {
+				margin-bottom: 0px;
+			}
+		}
+	}
+}
+
+.newest__products__wrapper {
+	padding-top: 120px;
+	padding-bottom: 120px;
+
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+
+	@media (min-width: $xlargeScreen) {
+		width: 85%;
+	}
+
+	@media (min-width: $xxlargeScreen) {
+		width: 80%;
+	}
+
+	h3 {
+		font-size: 30px;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+		color: $blue;
+		font-weight: $medium;
+	}
+
+	.newest__products {
+
+		.slick-slide {
+			margin: 0 27px;
+		}
+		/* the parent */
+		.slick-list {
+			margin: 0 -27px;
+		}
+
+		.product__wrapper {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			.product__image {
+				width: 250px;
+				height: 250px;
+				background-size: cover;
+				background-position: center;
+				border: 1px solid $blue;
+			}
+
+			.product__title__link {
+				text-decoration: none;
+				margin-top: 10px;
+				margin-bottom: 10px;
+				display: block;
+
+				h4 {
+					text-transform: uppercase;
+					color: $grey;
+					font-size: 20px;
+				}
+			}
+
+			.price {
+				color: $blue;
+
+			}
+		}
+
+		.slick-arrow {
+			font-size: 0;
+			line-height: 0;
+			position: absolute;
+			top: 43%;
+			display: none !important;
+			width: 30px;
+			height: 20px;
+			padding: 0;
+			-webkit-transform: translate(0,-50%);
+			-ms-transform: translate(0,-50%);
+			transform: translate(0,-50%);
+			cursor: pointer;
+			color: transparent;
+			border: none;
+			outline: 0;
+			background: 0 0;
+			z-index: 50;
+
+			@media (min-width: $xlargeScreen) {
+				display: block !important;
+			}
+		}
+
+		.slick-prev {
+			// left: -50px;
+			display: none;
+		}
+
+		.slick-next {
+			right: -60px;
+		}
+
+		// .slick-prev:before {
+		// 	content: "" !important;
+		// 	background: url('../../img/icons/prev-grey.png') no-repeat;
+		// 	background-size: contain;
+		// 	display: block;
+		// 	height: 30px;
+		// 	width: 30px;
+		// }
+
+		.slick-next:before {
+			content: "" !important;
+			background: url('../../img/icons/next-arrow.svg') no-repeat;
+			display: block;
+			height: 30px;
+			width: 30px;
+			background-size: contain;
+		}
+
+		.slick-arrow {
+			height: 38px !important;
+		}
+	}
+
+
+	.link__wrapper {
+		margin-top: 50px;
+		display: flex;
+		justify-content: center;
+	}
+}

@@ -1,0 +1,65 @@
+.woocommerce-account {
+	.woocommerce-notices-wrapper {
+		.woocommerce-error {
+			background-color: $blue;
+			color: $white;
+			padding: 30px; 
+			list-style: none;
+
+			strong {
+				display: none;
+			}
+		}
+	}
+}
+
+
+.woocommerce-account {
+	.woocommerce-MyAccount-navigation {
+		margin-bottom: 25px;
+		background-color: $blue;
+		padding: 20px;
+		width: 300px;
+		ul {
+			list-style: none;
+			margin-left: 0;
+
+			li {
+				margin-bottom: 6px;
+				a {
+					color: $white;
+					font-size: 20px;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	fieldset {
+		border: 0;
+		margin-top: 50px;
+
+		legend {
+			color: $blue;
+			font-size: 20px;
+			margin-bottom: 20px;
+		}
+	}
+
+	.woocommerce-EditAccountForm {
+		label {
+			color: $blue;
+			font-size: 20px;
+		}
+
+		input {
+			padding: 10px 10px;
+			border: 1px solid $blue;
+		}
+
+		.woocommerce-Button {
+			background-color: $blue;
+			color: $white;
+		}
+	}
+}
