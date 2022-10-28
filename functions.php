@@ -411,24 +411,28 @@ add_action( 'show_user_profile', 'extra_user_profile_fields' );
 add_action( 'edit_user_profile', 'extra_user_profile_fields' );
 
 function extra_user_profile_fields( $user ) { ?>
-    <h3><?php _e("Company Information", "blank"); ?></h3>
+<h3><?php _e("Company Information", "blank"); ?></h3>
 
-    <table class="form-table">
+<table class="form-table">
     <tr>
         <th><label for="companyname"><?php _e("Full Company Name"); ?></label></th>
         <td>
-            <input type="text" name="companyname" id="companyname" value="<?php echo esc_attr( get_the_author_meta( 'full_company_name', $user->ID ) ); ?>" class="regular-text" /><br />
+            <input type="text" name="companyname" id="companyname"
+                value="<?php echo esc_attr( get_the_author_meta( 'full_company_name', $user->ID ) ); ?>"
+                class="regular-text" /><br />
             <span class="description"><?php _e("Please enter the company name."); ?></span>
         </td>
     </tr>
     <tr>
-    <th><label for="accountcode"><?php _e("Your Current Account Code"); ?></label></th>
+        <th><label for="accountcode"><?php _e("Your Current Account Code"); ?></label></th>
         <td>
-            <input type="text" name="accountcode" id="accountcode" value="<?php echo esc_attr( get_the_author_meta( 'your_current_account_code', $user->ID ) ); ?>" class="regular-text" /><br />
+            <input type="text" name="accountcode" id="accountcode"
+                value="<?php echo esc_attr( get_the_author_meta( 'your_current_account_code', $user->ID ) ); ?>"
+                class="regular-text" /><br />
             <span class="description"><?php _e("Please enter the current account code."); ?></span>
         </td>
     </tr>
-    </table>
+</table>
 <?php }
 
 

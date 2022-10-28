@@ -14,11 +14,33 @@
 *,
 *:after,
 *:before {
-	-moz-box-sizing:border-box;
-	box-sizing:border-box;
-	-webkit-font-smoothing:antialiased;
-	font-smoothing:antialiased;
-	text-rendering:optimizeLegibility;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
 	padding: 0px;
 	margin: 0px;
+}
+
+/* Purchase order checkout field (Woocommerce)  */
+#purchase_order_field label {
+	display: flex;
+	color: #263b8a;
+	font-weight: 900;
+	font-size: 1.5rem;
+	align-items: center;
+	font-family: korolev, sans-serif;
+}
+#purchase_order_field label span {
+	font-size: 1rem;
+	color: #636363;
+	font-weight: 500;
+	margin-bottom: 0rem;
+}
+
+#purchase_order_field .woocommerce-input-wrapper #purchase_order {
+	padding: 20px;
+	margin-top: 0.75rem;
+	border: 2px solid #263b8a;
 }
